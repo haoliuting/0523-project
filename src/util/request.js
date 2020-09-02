@@ -55,3 +55,12 @@ export const reqMenuDel = (params) => {
     data:qs.stringify(params)
   })
 }
+
+//banner删除 params={id:1}
+export const reqbannerDel = (params) => {
+  return axios({
+    url: baseUrl + "/api/bannerdelete",
+    method: "post",
+    data:qs.stringify(params)
+  })
+}
