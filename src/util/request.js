@@ -55,3 +55,12 @@ export const reqMenuDel = (params) => {
     data:qs.stringify(params)
   })
 }
+
+//角色删除 params={id:1}
+export const reqroleDel = (params) => {
+  return axios({
+    url: baseUrl + "/api/roledelete",
+    method: "post",
+    data:qs.stringify(params)
+  })
+}
