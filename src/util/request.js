@@ -55,3 +55,12 @@ export const reqMenuDel = (params) => {
     data:qs.stringify(params)
   })
 }
+
+//manage删除 params={id:1}
+export const reqmanageDel = (params) => {
+  return axios({
+    url: baseUrl + "/api/managedelete",
+    method: "post",
+    data:qs.stringify(params)
+  })
+}
