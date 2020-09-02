@@ -59,7 +59,23 @@ export const reqMenuDel = (params) => {
 //banner删除 params={id:1}
 export const reqbannerDel = (params) => {
   return axios({
-    url: baseUrl + "/api/bannerdelete",
+    url: baseUrl + "/api/bannerdelete", method: "post",
+    data:qs.stringify(params)
+  })
+}
+
+//manage删除 params={id:1}
+export const reqmanageDel = (params) => {
+  return axios({
+    url: baseUrl + "/api/managedelete",
+    method: "post",
+    data:qs.stringify(params)
+  })
+}
+//角色删除 params={id:1}
+export const reqroleDel = (params) => {
+  return axios({
+    url: baseUrl + "/api/roledelete",
     method: "post",
     data:qs.stringify(params)
   })
